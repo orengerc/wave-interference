@@ -36,3 +36,11 @@ def exp(x, a, b):
 
 def cos_squared(x, I_0, phi):
     return I_0 * (np.cos(x + phi) ** 2)
+
+
+def one_slit(x, a, b, c):
+    return a * np.square(np.sinc(b * x + c))
+
+
+def two_slits(x, a, b, c, d, e):
+    return a * np.square(np.sinc(b * x + c)) * np.square(np.cos(d * x + e))

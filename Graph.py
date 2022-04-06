@@ -69,8 +69,8 @@ class Graph:
                         marker=dict(color="red", opacity=.7),
                         line=dict(color="red", width=1))],
             layout=go.Layout(title=fr"{self._graph_title}",
-                             xaxis={"title": self._x_label},
-                             yaxis={"title": self._y_label},
+                             xaxis={"title": self._x_label, "showgrid": True},
+                             yaxis={"title": self._y_label, "showgrid": True},
                              height=400))
         fig.show()
         self.save_fig(fig)
